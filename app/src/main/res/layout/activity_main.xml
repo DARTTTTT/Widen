@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity"
+
+    >
+
+    <!-- <android.support.v7.widget.RecyclerView
+         android:id="@+id/rv_demo1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>-->
+
+    <FrameLayout
+        android:id="@+id/zbj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <!--<include layout="@layout/layout_toolbar" />-->
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleHeight"
+        android:layout_gravity="bottom"
+        android:background="@color/Grey_100"
+        app:layout_behavior="@string/bottom_view_behavior"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/rg_btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"
+                android:drawableBottom="@drawable/eye_select"
+                />
+
+            <RadioButton
+                android:id="@+id/rg_btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"
+                android:drawableBottom="@drawable/classify_select"
+                />
+
+           <!-- <RadioButton
+                android:id="@+id/rg_btn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+
+                android:drawableBottom="@drawable/triangle_24dp"/>-->
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

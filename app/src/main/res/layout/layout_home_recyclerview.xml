@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/layout_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/img_height"
+        android:contentDescription="@string/description"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/layout_img_icon"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            app:riv_corner_radius="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layout_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特条|教你女朋友如何玩"
+                android:textColor="@color/color_style"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/layout_text_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="音乐/搞笑/恶搞"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/layout_text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/color_style"
+            android:layout_marginRight="15dp"
+            android:text="搞笑" />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/Grey_300"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

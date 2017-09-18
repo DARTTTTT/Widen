@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_search_item"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search_blue_grey_200_18dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_weight="1"
+            android:cursorVisible="true"
+            android:hint="帮你找到感兴趣的视频"
+            android:textSize="12sp"
+            android:textColor="@color/color_style"
+
+            />
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_clear_black_18dp"
+            android:visibility="gone"
+            />
+
+       <!-- <TextView
+            android:id="@+id/text_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/color_style"
+            android:text="取消" />-->
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@drawable/selector_text_press_black_color"
+            android:text="取消" />
+
+    </LinearLayout>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/Grey_300"
+        />-->
+
+
+    <TextView
+        android:id="@+id/text_tips"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="输入标题或描述的关键词找到更多视频"
+        android:textColor="@color/Grey_900"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:text=""
+        android:textColor="@color/color_style"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
